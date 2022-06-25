@@ -11,12 +11,5 @@ You can integrate with circleci by defining your own config.yml file.
 
 Logic of Test case.
 
-1	Search for the user with username “Delphine”. Get the userid of Delhine from https://jsonplaceholder.typicode.com/users
-2	Use this id  to search in the Post Api to get all the Post of Delphine from	https://jsonplaceholder.typicode.com/posts
-3	Count the size of Post made by Delphine	
-4	Use this count to Get all the comments of this Post.	
-5	Get the PostId 	
-6	Use this PostId to get all the emails in the Post from https://jsonplaceholder.typicode.com/comments/
-7	Very each email that the email is Valid or not.	
 
 ![image](https://user-images.githubusercontent.com/107347154/175785182-de16685c-25ec-4aed-99ec-f463dc55de51.png)
