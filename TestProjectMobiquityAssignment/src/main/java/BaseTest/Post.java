@@ -41,9 +41,9 @@ public class Post extends RestTemplateUtil{
 		
 		Map<String, String> param = new HashMap<String, String>();
 		param.put(POST_ID, ID);
-		LOG.info("Executing GET request to Posts API with " +POST_ID+"="+ ID);
+		//LOG.info("Executing GET request to Posts API with " +POST_ID+"="+ ID);
 		response = executeGet(ENDPOINT, param);
-		LOG.info("Response of Posts API: "+ response.asString());
+		//LOG.info("Response of Posts API: "+ response.asString());
 		return response;
 	}
 	@Test

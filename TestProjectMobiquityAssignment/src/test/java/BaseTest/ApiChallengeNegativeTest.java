@@ -1,6 +1,10 @@
 package BaseTest;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,17 +14,17 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Assertions;
 import org.testng.Assert;
 
-public class ApiChallengeTest  {   	
+public class ApiChallengeNegativeTest  {   	
 
 	@Test
-	public void testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser()  {	
+	public void testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser() throws FileNotFoundException  {	
 		
 	
 	Users users = new Users();
 	Comments comments = new Comments();	
 	Post posts = new Post();
 	//JsonFileReader jsonReader = new JsonFileReader();	
-	users.getResponseByUserName("Delphine");		
+	users.getResponseByUserName("NoTaUser");		
 	List<Integer> userIdList= users.getListOfValuesOfIDInResponse();		
 	for(Integer userId: userIdList) {			
 			posts.getResponseByUserID(userId.toString());
@@ -30,13 +34,15 @@ public class ApiChallengeTest  {
 				System.out.println("PostId for " + PostId.toString());
 				List<String> emails= comments.getListOfValuesOfEmailsInResponse();
 				for (String item : emails) {
-					boolean var = comments.isValid(item);
-					if (var =true) {
-				    System.out.println(" email is valid for " + item);}
+					boolean var = comments.isValid(item);		
 					
-				    else {System.out.println(" email is NOT valid for " + item);}	    
+					if (var =true) {
+				    System.out.println(" email is valid for " + item);}					
+				    else {System.out.println(" email is NOT valid for " + item);}	
+					
 				
 				}
+				
 				
 			}
 		}

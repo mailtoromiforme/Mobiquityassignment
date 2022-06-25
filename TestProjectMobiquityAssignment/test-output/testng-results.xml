@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-25T15:21:36 CEST" name="Default suite" finished-at="2022-06-25T15:21:43 CEST" duration-ms="6638">
+  <suite started-at="2022-06-25T19:27:12 CEST" name="Default suite" finished-at="2022-06-25T19:27:15 CEST" duration-ms="2869">
     <groups>
     </groups>
-    <test started-at="2022-06-25T15:21:36 CEST" name="Default test" finished-at="2022-06-25T15:21:43 CEST" duration-ms="6638">
-      <class name="BaseTest.ApiChallengeTest">
-        <test-method signature="testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser()[pri:0, instance:BaseTest.ApiChallengeTest@38c6f217]" started-at="2022-06-25T15:21:36 CEST" name="testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser" finished-at="2022-06-25T15:21:43 CEST" duration-ms="6586" status="PASS">
+    <test started-at="2022-06-25T19:27:12 CEST" name="Default test" finished-at="2022-06-25T19:27:15 CEST" duration-ms="2869">
+      <class name="BaseTest.ApiChallengeNegativeTest">
+        <test-method signature="testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser()[pri:0, instance:BaseTest.ApiChallengeNegativeTest@c267ef4]" started-at="2022-06-25T19:27:12 CEST" name="testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser" finished-at="2022-06-25T19:27:15 CEST" duration-ms="2821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateFormatOfEmailsInCommentsSectionForAllPostsOfAUser -->
-      </class> <!-- BaseTest.ApiChallengeTest -->
+      </class> <!-- BaseTest.ApiChallengeNegativeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
